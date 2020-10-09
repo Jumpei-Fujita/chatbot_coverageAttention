@@ -24,10 +24,10 @@ Decoderの出力の単語生成確率ベクトルをlogSoftmax関数により変
 
 ## 結果＋Attention可視化
 Attentionを可視化したものを以下に示す<br>
-1.coverage mechanism導入なし
+1.coverage mechanism導入なし<br>
 ![attention](https://github.com/Jumpei-Fujita/chatbot_normalAttention/blob/main/normalDialogAttn3500.png)
 ![attention](https://github.com/Jumpei-Fujita/chatbot_normalAttention/blob/main/normalDialogAttn2777.png)<br>
-2.coverage mechanism導入
+2.coverage mechanism導入<br>
 ![attention](https://github.com/Jumpei-Fujita/chatbot_coverageAttention/blob/main/coverageDialogattn3500.png)
 ![attention](https://github.com/Jumpei-Fujita/chatbot_coverageAttention/blob/main/coverageDialogAttn2777.png)<br>
 coverage mechanismの有無によるattention weightを比較すると、coverage mechanismなしの場合、stepごとの注目度合いにあまり変化が見られず、繰り返しの原因や、全て同一の返答の原因になってしまっているが、coverage mechanism有りの場合はattention weightが時間によってばらつき具合が変化しているのがわかる。会話が成り立っていない可能性があり。教師データ増量などの改善の余地がある。
